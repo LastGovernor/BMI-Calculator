@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+        <p class="paragraph">New BMI calculation, based on University of Oxford resources!</p>    
+    </header>
+    <main class="testimonial-grid">
+        <article class="testimonial left">
+            <ul class="list-left">
+                <ol>Weight: <input type="text" class="input-text" id="weight"> Kg</ol>
+                <ol>Height: <input type="text" class="input-text" id="height"> cm</ol>
+                <ol><input type="button" class="button" id="btn" value="Calculate"></ol>
+                <ol><span>BMI: </span><span class="bmi" id="bmi">0</span></ol>
+            </ul>
+        </article>
+        <article class="testimonial middle">
+            <ul class="list-middle">
+                <h2>BMI</h2>
+                <ol>< 16</ol>
+                <ol>16 – 16,99</ol>
+                <ol>17 – 18,49</ol>
+                <ol class="highlight">18,5 – 24,99</ol>
+                <ol>25 – 29,99</ol>
+                <ol>30 – 34,99</ol>
+                <ol>35 – 39,99</ol>
+                <ol>≥ 40</ol>
+            </ul>
+        </article>
+        <article class="testimonial right">
+            <ul class="list-right">
+                <h2>Weight Class</h2>
+                <ol>Severe Emaciation</ol>
+                <ol>Moderate Leanness</ol>
+                <ol>Mild Leanness</ol>
+                <ol class="highlight">Normal Body Weight</ol>
+                <ol>Overweight</ol>
+                <ol>I. Obesity</ol>
+                <ol>II. Obesity</ol>
+                <ol>III. Obesity</ol>
+            </ul>
+        </article>
+        <article class="testimonial grid-col-span-3 bottom">
+            <p class="text" id="text">-</p>
+        </article>
+    </main>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
