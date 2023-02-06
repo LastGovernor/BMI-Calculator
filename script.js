@@ -1,11 +1,13 @@
 'use strict';
 
+document.getElementById('weight').value = '0';
+document.getElementById('height').value = '0';
 const bmindex = document.getElementById('bmi');
 const btn = document.getElementById('btn');
 
 function bmiCalculator(){
-    const weight = document.getElementById('weight').value;
-    const height = document.getElementById('height').value;
+    let weight = document.getElementById('weight').value;
+    let height = document.getElementById('height').value;
     let text = document.getElementById('text');
     // Calculate Body Mass Index
     let bmi = Number(weight) * 1.3 / (Number(height) / 100) ** 2.5;
